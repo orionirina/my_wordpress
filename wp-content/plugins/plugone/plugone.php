@@ -14,3 +14,8 @@ Author URI: https://automattic.com/wordpress-plugins/
 License: GPLv2 or later
 Text Domain: plugone
 */
+function newFooter($content) {
+    return $content . "My footer";
+}
+
+add_filter('wp_footer', 'newFooter');
